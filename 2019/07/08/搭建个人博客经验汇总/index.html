@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/08/搭建个人博客经验汇总/设置图片1.png">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/08/搭建个人博客经验汇总/设置图片2.png">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/08/搭建个人博客经验汇总/HEXO版本.png">
-<meta property="og:updated_time" content="2019-07-08T02:06:28.291Z">
+<meta property="og:updated_time" content="2019-07-08T07:15:46.121Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建个人博客经验汇总1.5">
 <meta name="twitter:description" content="本文尚未解决问题： 1、创建分支在不同电脑编辑文档； 2、插入图片时，加入图标题会出现图片裂纹的错误符号。 ​       今天完全是一时兴起，想变着法子刺激自己把Java和安卓学得更扎实，就想到研究一下自己建立一个个人博客，定期把自己复习之前的笔记总结发上来。倒腾了一天先把自己碰到的问题尽可能的写下来吧。 准备工作​         尝试了自己套用网上的模板之后发现效果不理想，因此转而使用no">
@@ -214,6 +214,7 @@
 <h2 id="遇到的问题及其解决方法"><a href="#遇到的问题及其解决方法" class="headerlink" title="遇到的问题及其解决方法"></a>遇到的问题及其解决方法</h2><p>​        按照以上方法将网页部署到github之后发现主题样式不能正确显示，查询解决方法是修改_config.yml文件如下</p>
 <img src="/MaxHuang26.github.io/2019/07/08/搭建个人博客经验汇总/URL.png">
 
+<p>​          一定要注意！URL不能是“https”,必须改成“http”,因为一般用户访问博客不可能通过SSL（安全套接层）访问，我的粗浅理解是https用于已注册用户，未注册用户直接http访问即可。</p>
 <p>​          再次部署，问题解决，网页样式显示正常！</p>
 <h2 id="网页图片显示出现问题"><a href="#网页图片显示出现问题" class="headerlink" title="网页图片显示出现问题"></a>网页图片显示出现问题</h2><p>​          点进本文发现，文章所使用的图片信息全部显示出错：</p>
 <p>​         <img src="/MaxHuang26.github.io/2019/07/08/搭建个人博客经验汇总/图片显示错误.png"></p>
@@ -234,7 +235,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 1.jpg 这是一个新的博客的图片的说明 %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>​        asset_img是插入的固定语句，由于图片已经存在资源目录中，所以直接写文件名.文件格式即可，空格后的“这是一个新的博客的图片的说明”是图标题。但是在实际使用中发现，加了图表题后还是会产生一个图片的裂纹图像，因此本文暂时不添加图标题，后期再尝试改善这个问题。</p>
-<p>本文于2019.7.8重新修改编辑</p>
+<p>本文于2019.7.8 下午 重新修改编辑</p>
 
   </div>
 </article>
