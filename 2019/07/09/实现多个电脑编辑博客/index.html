@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="​            为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 ​           使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   master中被部署的文件列表存在于hexo本地目录中的.d">
+    <meta name="description" content="&amp;emsp;&amp;emsp;为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 &amp;emsp;&amp;emsp;使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   &amp;emsp;&amp;emsp;master中被部署的文件列表存在于h">
 <meta name="keywords" content="日常折腾; Github Pages; Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="实现多个电脑编辑博客">
 <meta property="og:url" content="http://maxhuang26.github.io/2019/07/09/实现多个电脑编辑博客/index.html">
 <meta property="og:site_name" content="Max&#39;s Blog">
-<meta property="og:description" content="​            为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 ​           使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   master中被部署的文件列表存在于hexo本地目录中的.d">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 &amp;emsp;&amp;emsp;使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   &amp;emsp;&amp;emsp;master中被部署的文件列表存在于h">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/master.png">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/Hexo目录配置文件.png">
@@ -25,10 +25,10 @@
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/创建测试项.png">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/测试分支1.png">
 <meta property="og:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/测试分支2.png">
-<meta property="og:updated_time" content="2019-07-09T10:14:00.620Z">
+<meta property="og:updated_time" content="2019-07-09T10:31:30.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实现多个电脑编辑博客">
-<meta name="twitter:description" content="​            为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 ​           使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   master中被部署的文件列表存在于hexo本地目录中的.d">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。 &amp;emsp;&amp;emsp;使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：   &amp;emsp;&amp;emsp;master中被部署的文件列表存在于h">
 <meta name="twitter:image" content="http://maxhuang26.github.io/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/master.png">
     
     
@@ -84,6 +84,8 @@
     <br/>
     <span id="actions">
       <ul>
+        
+        <li><a class="icon" href="/MaxHuang26.github.io/2019/07/09/关于markdown的换行与首行缩进/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" href="/MaxHuang26.github.io/2019/07/09/测试/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -157,18 +159,15 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>​            为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。</p>
-<p>​           使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：</p>
+    <p>&emsp;&emsp;为了在寝室能用自己的电脑编辑博客。上网查了相关设置方法，网址贴在最后备份。这篇是自己一边尝试一边写的。</p>
+<p>&emsp;&emsp;使用Hexo部署在Github仓库里的博客属于静态的博客文件，Hexo本身的配置文件并没有被部署到仓库中。因此在github默认的master仓库中的文件和本地文件并不一致。如下：</p>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/master.png">
 
-<p>master中被部署的文件列表存在于hexo本地目录中的.deploy_git文件夹中，可见与github的master库中的文件列表一致：</p>
+<p>&emsp;&emsp;master中被部署的文件列表存在于hexo本地目录中的.deploy_git文件夹中，可见与github的master库中的文件列表一致：</p>
 
 
-<p>​           同时附上hexo本地目录中的结构解析，：</p>
-<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/Hexo目录配置文件.png">
-
-
-
+<p>&emsp;&emsp;同时附上hexo本地目录中的结构解析，：</p>
+<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/Hexo目录配置文件.png"><br>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/hexo目录结构.png">
 
 <p> 由上可见：</p>
@@ -176,38 +175,31 @@
 <p>1、hexo通过把md文件转换成网页文件并部署到github的静态网页，从而成为博客；</p>
 <p>2、hexo目录下的文件和github上的文件是不同的，public文件夹的文件通过hexo d 上传到github去了，其他的文件则留在本地目录下。</p>
 </blockquote>
-<p>​           为了实现多个电脑编辑博客的效果，我们要把hexo的相关部署配置一起备份在github上，再换新电脑之后能直接克隆下来进行简单的配置就可以使用。</p>
-<h1 id="在原PC上的操作"><a href="#在原PC上的操作" class="headerlink" title="在原PC上的操作"></a>在原PC上的操作</h1><h2 id="1）对username-github-io仓库新建hexo分支，并克隆"><a href="#1）对username-github-io仓库新建hexo分支，并克隆" class="headerlink" title="1）对username.github.io仓库新建hexo分支，并克隆"></a>1）对username.github.io仓库新建hexo分支，并克隆</h2><p>​           在github的博客仓库中新建一个分支，命名为hexo，并将hexo分支设置为默认分支。然后在硬盘另找一个目录，把该仓库克隆到本地。</p>
-<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/默认分支.png">
-
+<p>&emsp;&emsp;为了实现多个电脑编辑博客的效果，我们要把hexo的相关部署配置一起备份在github上，再换新电脑之后能直接克隆下来进行简单的配置就可以使用。</p>
+<h1 id="在原PC上的操作"><a href="#在原PC上的操作" class="headerlink" title="在原PC上的操作"></a>在原PC上的操作</h1><h2 id="1）对username-github-io仓库新建hexo分支，并克隆"><a href="#1）对username-github-io仓库新建hexo分支，并克隆" class="headerlink" title="1）对username.github.io仓库新建hexo分支，并克隆"></a>1）对username.github.io仓库新建hexo分支，并克隆</h2><p>&emsp;&emsp;在github的博客仓库中新建一个分支，命名为hexo，并将hexo分支设置为默认分支。然后在硬盘另找一个目录，把该仓库克隆到本地。</p>
+<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/默认分支.png"><br>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/克隆.png">
 
-<p>​           进入克隆下来的仓库MaxHuang26.github.io，用git branch语句确认是否处于hexo分支上：</p>
+<p>&emsp;&emsp;进入克隆下来的仓库MaxHuang26.github.io，用git branch语句确认是否处于hexo分支上：</p>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/确定分支.png">
 
-<h2 id="2）将本地博客的部署文件拷贝进username-github-io文件目录"><a href="#2）将本地博客的部署文件拷贝进username-github-io文件目录" class="headerlink" title="2）将本地博客的部署文件拷贝进username.github.io文件目录"></a>2）将本地博客的部署文件拷贝进username.github.io文件目录</h2><p>​            如题，将Hexo目录中的所有文件，即本地博客的部署文件全部拷贝到这个克隆下来的hexo仓库文件夹MaxHuang26.github.io中。</p>
-<p>​            在MaxHuang26.github.io中做一下判断，判断合适后再执行以下代码：</p>
+<h2 id="2）将本地博客的部署文件拷贝进username-github-io文件目录"><a href="#2）将本地博客的部署文件拷贝进username-github-io文件目录" class="headerlink" title="2）将本地博客的部署文件拷贝进username.github.io文件目录"></a>2）将本地博客的部署文件拷贝进username.github.io文件目录</h2><p>&emsp;&emsp;如题，将Hexo目录中的所有文件，即本地博客的部署文件全部拷贝到这个克隆下来的hexo仓库文件夹MaxHuang26.github.io中。</p>
+<p>&emsp;&emsp;在MaxHuang26.github.io中做一下判断，判断合适后再执行以下代码：</p>
 <blockquote>
 <p>1）将themes目录以内中的主题的.git目录删除（如果有），因为一个git仓库中不能包含另一个git仓库，提交主题文件夹会失败；<br>2）由于删除了themes目录中的.git，因此不能通过git pull更新主题，需要更新主题时在另一个地方git clone下来该主题的最新版本，然后将内容拷到当前主题目录即可。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &apos;back up hexo files&apos; *引号中的文字属于操作备注，方便查询，可改动</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 
-<p>​          将博客的hexo部署文件提交到github中的hexo分支中，此时刷新github页面可以看出hexo和master两个分支的区别。</p>
-<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/Hexo最终.png">
-
-
-
+<p>&emsp;&emsp;将博客的hexo部署文件提交到github中的hexo分支中，此时刷新github页面可以看出hexo和master两个分支的区别。</p>
+<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/Hexo最终.png"><br>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/master.png">
 
-<p>​          其中，master分支和hexo版本各自保留一个版本，master分支用于保存博客静态资源，提供博客页面供人访问。hexo分支用于备份博客部署文件，供自己维护更新。所以以后在不同电脑的更新都在hexo分支中执行。</p>
-<h2 id="3-测试页发布"><a href="#3-测试页发布" class="headerlink" title="3)测试页发布"></a>3)测试页发布</h2><p>​         在公司电脑的hexo本地分支部署好之后，尝试发布一份测试博客。hexo new 新建了一个测试页md文件：</p>
+<p>&emsp;&emsp;其中，master分支和hexo版本各自保留一个版本，master分支用于保存博客静态资源，提供博客页面供人访问。hexo分支用于备份博客部署文件，供自己维护更新。所以以后在不同电脑的更新都在hexo分支中执行。</p>
+<h2 id="3-测试页发布"><a href="#3-测试页发布" class="headerlink" title="3)测试页发布"></a>3)测试页发布</h2><p>&emsp;&emsp;在公司电脑的hexo本地分支部署好之后，尝试发布一份测试博客。hexo new 新建了一个测试页md文件：</p>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/创建测试项.png">
 
-<p>​        在本地4000服务器测试可行，使用git d指令将分支变化推到github上，打开博客网页如下，测试成功：</p>
-<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/测试分支1.png">
-
-
-
+<p>&emsp;&emsp;在本地4000服务器测试可行，使用git d指令将分支变化推到github上，打开博客网页如下，测试成功：</p>
+<img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/测试分支1.png"><br>
 <img src="/MaxHuang26.github.io/2019/07/09/实现多个电脑编辑博客/测试分支2.png">
 
 
