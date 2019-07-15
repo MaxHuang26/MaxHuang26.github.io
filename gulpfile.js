@@ -29,7 +29,7 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('./public'));
 });
 // 压缩 public/demo 目录内图片
-gulp.task('minify-images', function() {
+gulp.task('minify-images', done=>{
     gulp.src('./public/demo/**/*.*')
         .pipe(imagemin({
            optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
@@ -38,8 +38,9 @@ gulp.task('minify-images', function() {
            multipass: false, //类型：Boolean 默认：false 多次优化svg直到完全优化
         }))
         .pipe(gulp.dest('./public/uploads'));
+		done();
 });
-// 默认任务
-gulp.task('default', [
-  'minify-html','minify-css','minify-js','minify-images'
-]);
+// 默认任务 gulp 4.0 适用的方式
+gulp.task('default', gulp.parallel('minify-html', 'minify-css', 'minify-js', 'minify-images'
+ //build the website
+));
