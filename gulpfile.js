@@ -30,6 +30,7 @@ gulp.task('minify-js', function() {
 });
 // 压缩 public/demo 目录内图片
 gulp.task('minify-images', done=>{
+//gulp.task('minify-images', function() {
     gulp.src('./public/demo/**/*.*')
         .pipe(imagemin({
            optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
@@ -44,3 +45,8 @@ gulp.task('minify-images', done=>{
 gulp.task('default', gulp.parallel('minify-html', 'minify-css', 'minify-js', 'minify-images'
  //build the website
 ));
+
+//gulp 3.x适用程序
+//gulp.task('default', [
+  //'minify-html','minify-css','minify-js','minify-images'
+//]);
