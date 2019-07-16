@@ -5,13 +5,14 @@ var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
 var imagemin = require('gulp-imagemin');
 // 压缩css文件
-gulp.task('minify-css', function() {
+gulp.task('minify-css', done=>{
   return gulp.src('./public/**/*.css')
   .pipe(minifycss())
   .pipe(gulp.dest('./public'));
+  done();
 });
 // 压缩html文件
-gulp.task('minify-html', function() {
+gulp.task('minify-html', done=>{
   return gulp.src('./public/**/*.html')
   .pipe(htmlclean())
   .pipe(htmlmin({
@@ -20,13 +21,15 @@ gulp.task('minify-html', function() {
     minifyCSS: true,
     minifyURLs: true,
   }))
-  .pipe(gulp.dest('./public'))
+  .pipe(gulp.dest('./public'));
+  done();
 });
 // 压缩js文件
-gulp.task('minify-js', function() {
+gulp.task('minify-js', done=>{
     return gulp.src(['./public/**/.js','!./public/js/**/*min.js'])
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
+		done();
 });
 // 压缩 public/demo 目录内图片
 gulp.task('minify-images', done=>{
