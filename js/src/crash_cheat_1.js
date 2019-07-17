@@ -18,6 +18,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		  a=a+1;
 
 
      }
@@ -34,6 +35,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		  a=a+1;
 
 
 	 }
@@ -50,11 +52,12 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		  a=a+1;
 
 
      }
 	 }
 
  });
- a=a+1;
+
 	  
