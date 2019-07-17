@@ -1,11 +1,15 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
-	  var a = parseInt(Math.random()*100);
-      var b = a%4+1;
+ function myRandom() {
+ var rand = Math.random();
+ if (rand < .5) return 1;
+ if (rand < .6) return 2;
+ if (rand < .65) return 3;
+}
+	  //var a = parseInt(Math.random()*100);
+      var b = myRandom();
  document.addEventListener('visibilitychange', function () {
-
-	  
 	 if(b==1){
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
@@ -18,9 +22,6 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  
-
-
      }
 	 }
 	 else if (b==2){
@@ -35,9 +36,6 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  
-
-
 	 }
 	 }
 	 else if (b==3){
@@ -52,12 +50,8 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  
-
-
      }
 	 }
-
  });
 
 	  
