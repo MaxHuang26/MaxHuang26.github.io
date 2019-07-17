@@ -31,7 +31,8 @@ var b = a%4+1;
              document.title = OriginTitle;
          }, 2000);
 	 }
-	 else if (b==2){
+	 }
+	 else if (b==3){
 		      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(/∇＼*) 我藏好啦 ~';
