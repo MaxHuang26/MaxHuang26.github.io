@@ -22,6 +22,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 b = myRandom();
      }
 	 }
 	 else if (b==2){
@@ -36,6 +37,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 b = myRandom();
 	 }
 	 }
 	 else if (b==3){
@@ -50,6 +52,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 b = myRandom();
      }
 	 }
  });
