@@ -3,13 +3,14 @@
  var titleTime;
  function myRandom() {
  var rand = Math.random();
- if (rand < .5) return 1;
- if (rand < .6) return 2;
- if (rand < .65) return 3;
+ if (rand < .33) return 1;
+ if (.33<rand < .66) return 2;
+ if (rand > .67) return 3;
 }
 	  //var a = parseInt(Math.random()*100);
-      var b = myRandom();
+      
  document.addEventListener('visibilitychange', function () {
+	 var b = myRandom();
 	 if(b==1){
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
