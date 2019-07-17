@@ -1,10 +1,10 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
-
- document.addEventListener('visibilitychange', function () {
 	  var a = parseInt(Math.random()*100);
       var b = a%4+1;
+ document.addEventListener('visibilitychange', function () {
+
 	  
 	 if(b==1){
      if (document.hidden) {
@@ -18,6 +18,8 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 var a = parseInt(Math.random()*100);
+      var b = a%4+1;
      }
 	 }
 	 else if (b==2){
@@ -32,6 +34,8 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 var a = parseInt(Math.random()*100);
+      var b = a%4+1;
 	 }
 	 }
 	 else if (b==3){
@@ -46,6 +50,8 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
+		 var a = parseInt(Math.random()*100);
+      var b = a%4+1;
      }
 	 }
 
