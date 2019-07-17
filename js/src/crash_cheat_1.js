@@ -1,6 +1,7 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
+ while(true){
  var a = parseInt(Math.random()*100);
 var b = a%4+1;
  document.addEventListener('visibilitychange', function () {
@@ -48,3 +49,4 @@ var b = a%4+1;
 	 }
 
  });
+ }
