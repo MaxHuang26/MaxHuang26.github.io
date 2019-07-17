@@ -3,7 +3,7 @@
  var titleTime;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/images/favicon.ico");
+         $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(/∇＼*) 我藏好啦 ~';
          clearTimeout(titleTime);
      }
