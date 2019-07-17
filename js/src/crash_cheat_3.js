@@ -8,7 +8,7 @@
          clearTimeout(titleTime);
      }
      else {
-         $('[rel="icon"]').attr('href', "/images/favicon.ico");
+         $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(*๓´╰╯`๓) 嗨呀~被找到啦' + OriginTitle;
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
