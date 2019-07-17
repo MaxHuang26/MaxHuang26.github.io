@@ -8,12 +8,11 @@
  if (rand > .67) return 3;
 }
 	  //var a = parseInt(Math.random()*100);
-var x;
+var x=null;
  document.addEventListener('visibilitychange', function () {
 	 var b = myRandom();
 
-	 if(x==null){
-	 x=b;}
+	 
 	 if(b==1){
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
@@ -39,7 +38,8 @@ var x;
      
 	 }
 	 
-	 
+	 if(x==null){
+	 x=b;}
 	 
 	 	 if(x==1){
      if (!document.hidden) {
