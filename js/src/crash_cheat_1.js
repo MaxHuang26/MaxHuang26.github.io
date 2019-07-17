@@ -8,10 +8,10 @@
  if (rand > .67) return 3;
 }
 	  //var a = parseInt(Math.random()*100);
-      
+      	 var x = null;
  document.addEventListener('visibilitychange', function () {
 	 var b = myRandom();
-	 var x = null;
+
 	 if(x==null){
 	 x=b;}
 	 if(b==1){
