@@ -1,10 +1,11 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
- while(true){
- var a = parseInt(Math.random()*100);
-var b = a%4+1;
+
  document.addEventListener('visibilitychange', function () {
+	  var a = parseInt(Math.random()*100);
+      var b = a%4+1;
+	  
 	 if(b==1){
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
@@ -49,4 +50,4 @@ var b = a%4+1;
 	 }
 
  });
- }
+ 
