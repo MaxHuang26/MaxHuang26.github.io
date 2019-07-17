@@ -3,7 +3,7 @@
  var titleTime;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/img/TEP.ico");
+         $('[rel="icon"]').attr('href', "/favicon.ico");
          document.title = '(/∇＼*) 我藏好啦 ~';
          clearTimeout(titleTime);
      }
