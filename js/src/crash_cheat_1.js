@@ -18,8 +18,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		 var a = parseInt(Math.random()*100);
-      var b = a%4+1;
+
      }
 	 }
 	 else if (b==2){
@@ -34,8 +33,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		 var a = parseInt(Math.random()*100);
-      var b = a%4+1;
+
 	 }
 	 }
 	 else if (b==3){
@@ -50,10 +48,10 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		 var a = parseInt(Math.random()*100);
-      var b = a%4+1;
+
      }
 	 }
-
+a = parseInt(Math.random()*100);
+b = a%4+1;
  });
  
