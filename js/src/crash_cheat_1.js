@@ -1,7 +1,7 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
-	  var a = 1:1:1000000;
+	  for (var a=1;a<1000000;a=a+1){
       var b = a%4+1;
  document.addEventListener('visibilitychange', function () {
 
@@ -56,4 +56,4 @@
 	 }
 
  });
- 
+	  }
