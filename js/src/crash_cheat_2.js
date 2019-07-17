@@ -3,12 +3,12 @@
  var titleTime;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
-         $('[rel="icon"]').attr('href', "/img/TEP.ico");
+         $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(งᵒ̌皿ᵒ̌)ง⁼³₌₃ 别跑呀！！ ~';
          clearTimeout(titleTime);
      }
      else {
-         $('[rel="icon"]').attr('href', "/favicon.ico");
+         $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '((٩(´͈ᗨ`͈)۶)) 回来啦~抱一个';
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
