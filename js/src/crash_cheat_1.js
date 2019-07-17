@@ -1,7 +1,7 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
-	  var a = 1;
+	  var a = parseInt(Math.random()*100);
       var b = a%4+1;
  document.addEventListener('visibilitychange', function () {
 
@@ -18,7 +18,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  a=a+1;
+		  
 
 
      }
@@ -35,7 +35,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  a=a+1;
+		  
 
 
 	 }
@@ -52,7 +52,7 @@
          titleTime = setTimeout(function () {
              document.title = OriginTitle;
          }, 2000);
-		  a=a+1;
+		  
 
 
      }
