@@ -1,6 +1,6 @@
-OriginTitile = document.title,
-		titleTime = null,
-		titleIndex = 0,
+        var OriginTitile = document.title;
+		var titleTime = null;
+		var titleIndex = 0;
 		title = [{
 			blur: "(●—●) 哎呦，崩溃啦！",
 			focus: "o(≧∇≦o) 啊咧，又好了……"
