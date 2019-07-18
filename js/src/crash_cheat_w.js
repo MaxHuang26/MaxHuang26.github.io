@@ -12,7 +12,7 @@
 			focus: "(*´∇｀*) 被发现啦～"
 		}];
 
-	document.on("visibilitychange", function() {
+	document.onvisibilitychange= function() {
 		if (document.hidden) {
 			titleIndex = Math.floor(Math.random() * 3);
 			document.title = title[titleIndex].blur;
@@ -27,4 +27,4 @@
 				document.title = OriginTitile;
 			}, 3000);
 		}
-	});
+		}
