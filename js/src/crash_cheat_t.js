@@ -1,4 +1,5 @@
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
         var OriginTitile = document.title;
 		var titleTime = null;
 		var titleIndex = 0;
@@ -12,7 +13,7 @@
 			blur: "(>_<) 我藏好了哦",
 			focus: "(*´∇｀*) 被发现啦～"
 		}];
-
+<script type="text/javascript">
 	$(document).on("visibilitychange", function() {
 		if (document.hidden) {
 			titleIndex = Math.floor(Math.random() * 3);
@@ -24,9 +25,9 @@
 		}
 		else {
 			document.title = title[titleIndex].focus;
-			showMessage("哇，你又回来了～", 6000, 9);
 			titleTime = setTimeout(function() {
 				document.title = OriginTitile;
 			}, 3000);
 		}
 	});
+</script>
