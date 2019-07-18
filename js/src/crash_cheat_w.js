@@ -11,7 +11,7 @@ OriginTitile = document.title,
 			blur: "(>_<) 我藏好了哦",
 			focus: "(*´∇｀*) 被发现啦～"
 		}];
-	};
+
 	$(document).on("visibilitychange", function() {
 		if (document.hidden) {
 			titleIndex = Math.floor(Math.random() * 3);
