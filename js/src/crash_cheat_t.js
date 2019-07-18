@@ -1,3 +1,4 @@
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         var OriginTitile = document.title;
 		var titleTime = null;
 		var titleIndex = 0;
