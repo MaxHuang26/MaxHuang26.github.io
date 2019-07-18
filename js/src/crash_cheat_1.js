@@ -1,18 +1,15 @@
 <!--崩溃欺骗-->
  var OriginTitle = document.title;
  var titleTime;
- function myRandom() {
+ var x=null;
+  function myRandom() {
  var rand = Math.random();
  if (rand < .33) return 1;
  if (.33<rand < .66) return 2;
  if (rand > .67) return 3;
 }
-	  //var a = parseInt(Math.random()*100);
-var x=null;
  document.addEventListener('visibilitychange', function () {
-	 var b = myRandom();
-
-	 
+	 var b = myRandom();	 
 	 if(b==1){
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
@@ -20,27 +17,24 @@ var x=null;
          clearTimeout(titleTime);
      }
 	 }
-
 	  else if (b==2){
 		      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(งᵒ̌皿ᵒ̌)ง⁼³₌₃ 别跑呀！！ ~';
          clearTimeout(titleTime);
-     }
-   
+     }   
 	 }
 	 else if (b==3){
 		      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
          document.title = '(/∇＼*) 我藏好啦 ~';
          clearTimeout(titleTime);
-     }
-     
-	 }
-	 
+     }   
+	 }	
+	  
 	 if(x==null){
-	 x=b;}
-	 
+	 x=b;}	
+	  
 	 	 if(x==1){
      if (!document.hidden) {
          $('[rel="icon"]').attr('href', "/MaxHuang26.github.io/images/favicon.ico");
@@ -76,8 +70,6 @@ var x=null;
      }
      
 	 }
-	 
-	 
 	
  });
 
